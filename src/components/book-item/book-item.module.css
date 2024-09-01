@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 20px 10px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.container .imageContainer {
+  position: relative;
+  width: 80px;
+}
+
+.container .imageContainer img {
+  object-fit: cover;
+}
+
+.titles h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.titles h4 {
+  margin: 0.1rem 0 0;
+  font-weight: normal;
+}
+
+.author {
+  margin: 1rem 0;
+  color: gray;
+}
