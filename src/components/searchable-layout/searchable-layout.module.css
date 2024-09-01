@@ -1,0 +1,21 @@
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.searchForm input {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+}
+
+.searchForm button {
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2593ff;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+}
