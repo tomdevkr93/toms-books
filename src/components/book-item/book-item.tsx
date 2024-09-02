@@ -7,7 +7,7 @@ export default function BookItem() {
       <li className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
-            src="/dummy_book.jpg"
+            src="/images/dummy_book.jpg"
             alt="프론트엔드 성능 최적화 가이드 도서 이미지"
             fill
           />
