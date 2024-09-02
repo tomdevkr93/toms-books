@@ -1,24 +1,31 @@
 import Image from "next/image";
 import styles from "./book-item.module.css";
+import { Book } from "../../../types";
 
-export default function BookItem() {
+type Props = Book;
+
+export default function BookItem({
+  coverImgUrl,
+  title,
+  subTitle,
+  author,
+  publisher,
+}: Props) {
   return (
     <>
       <li className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image
-            src="/images/dummy_book.jpg"
-            alt="프론트엔드 성능 최적화 가이드 도서 이미지"
-            fill
-          />
+          <Image src={coverImgUrl} alt={`${title} 도서 표지`} fill />
         </div>
         <div className={styles.bookInfo}>
           <div className={styles.titles}>
-            <h3>프론트엔드 성능 최적화 가이드</h3>
-            <h4>웹 개발 스킬을 한 단계 높여 주는</h4>
+            <h3>{title}</h3>
+            <h4>{subTitle}</h4>
           </div>
 
-          <p className={styles.author}>유동균 | 인사이트</p>
+          <p className={styles.author}>
+            {author} | {publisher}
+          </p>
         </div>
       </li>
     </>
